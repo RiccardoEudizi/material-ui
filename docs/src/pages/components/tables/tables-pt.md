@@ -43,6 +43,8 @@ The `Table` component has a close mapping to the native `<table>` elements. This
 
 The [`DataGrid` component](/components/data-grid/) is designed for use-cases that are focused around handling a large amounts of tabular data. While it comes with a more rigid structure, in exchange, you gain more powerful features.
 
+{{"demo": "pages/components/tables/DataTable.js", "bg": "inline"}}
+
 ## Tabelas Customizadas
 
 Aqui está um exemplo de customização do componente. Você pode aprender mais sobre isso na [página de documentação de sobrescritas](/customization/components/).
@@ -51,7 +53,7 @@ Aqui está um exemplo de customização do componente. Você pode aprender mais 
 
 ### Opções de paginação customizada
 
-É possível personalizar as opções mostradas em "Linhas por página" selecione usando a propriedade `rowsPerPageOptions`. Você deve fornecer um array de:
+É possível customizar as opções mostradas na seleção "Rows per page" usando a propriedade `rowsPerPageOptions`. Você deve fornecer um array de:
 
 - **numbers**, cada número será usado para o rótulo e valor da opção.
     
@@ -67,7 +69,7 @@ Aqui está um exemplo de customização do componente. Você pode aprender mais 
 
 ### Ações de paginação customizada
 
-A propriedade `ActionsComponent` do componente `TablePagination` permite a implementação de ações personalizadas.
+A propriedade `ActionsComponent` do componente `TablePagination` permite a implementação de ações customizadas.
 
 {{"demo": "pages/components/tables/CustomPaginationActionsTable.js", "bg": true}}
 
