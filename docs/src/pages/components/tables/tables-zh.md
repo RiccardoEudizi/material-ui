@@ -43,6 +43,8 @@ components: Table, TableBody, TableCell, TableContainer, TableFooter, TableHead,
 
 [`DataGrid` 组件](/components/data-grid/) 专为需要处理大量表格数据的情况而设计。 虽然它的结构相比之下不够灵活，但是有得必有失，牺牲灵活性来换取更强大的功能。 
 
+{{"demo": "pages/components/tables/DataTable.js", "bg": "inline"}}
+
 ## 自定义表格
 
 以下是自定义组件的一个示例。 您可以在[重写文档页](/customization/components/)中了解有关此内容的更多信息。
@@ -67,7 +69,7 @@ components: Table, TableBody, TableCell, TableContainer, TableFooter, TableHead,
 
 ### 自定义表格分页操作
 
-通过 `rowsPerPageOptions` 属性，也可以自定义 "Rows per page" 显示的选择项。 你应该提供以下一种数组：
+`TablePagination` 组件的 ` ActionsComponent ` 属性能够让您实现一些自定义的行为。
 
 {{"demo": "pages/components/tables/CustomPaginationActionsTable.js", "bg": true}} 
 
