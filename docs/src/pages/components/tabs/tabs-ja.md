@@ -58,7 +58,7 @@ waiAria: 'https://www.w3.org/TR/wai-aria-practices/#tabpanel'
 
 ### 強制スクロールボタン
 
-ビューポートの幅に関係なく、左右のスクロールボタンが表示されます。
+Left and right scroll buttons be presented (reserve space) regardless of the viewport width with `scrollButtons={true}` `allowScrollButtonsMobile`:
 
 {{"demo": "pages/components/tabs/ScrollableTabsButtonForce.js", "bg": true}}
 
@@ -74,7 +74,7 @@ If you want to make sure the buttons are always visible, you should customize th
 
 ### スクロールボタンを防ぐ
 
-左右のスクロールボタンは表示されません。 左右のスクロールボタンは表示されません。 左右のスクロールボタンは表示されません。 左右のスクロールボタンは表示されません。 すべてのスクロールは、ユーザーエージェントのスクロールメカニズム(たとえば、左右のスワイプ、Shift-マウスホイールなど。)を使用して開始する必要があります。
+Left and right scroll buttons are never be presented with `scrollButtons={false}`. 左右のスクロールボタンは表示されません。 左右のスクロールボタンは表示されません。 左右のスクロールボタンは表示されません。 すべてのスクロールは、ユーザーエージェントのスクロールメカニズム(たとえば、左右のスワイプ、Shift-マウスホイールなど。)を使用して開始する必要があります。
 
 {{"demo": "pages/components/tabs/ScrollableTabsButtonPrevent.js", "bg": true}}
 
