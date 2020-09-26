@@ -43,6 +43,8 @@ The `Table` component has a close mapping to the native `<table>` elements. This
 
 The [`DataGrid` component](/components/data-grid/) is designed for use-cases that are focused around handling a large amounts of tabular data. While it comes with a more rigid structure, in exchange, you gain more powerful features.
 
+{{"demo": "pages/components/tables/DataTable.js", "bg": "inline"}}
+
 ## Tableaux Personnalisés
 
 Voici un exemple de personnalisation du composant. Vous pouvez en savoir plus dans la [page de documentation des overrides](/customization/components/).
