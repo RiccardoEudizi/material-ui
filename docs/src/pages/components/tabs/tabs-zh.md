@@ -58,7 +58,7 @@ waiAria: 'https://www.w3.org/TR/wai-aria-practices/#tabpanel'
 
 ### 强制滚动按钮
 
-无论视图的宽度如何，都将显示左右滚动按钮。
+Left and right scroll buttons be presented (reserve space) regardless of the viewport width with `scrollButtons={true}` `allowScrollButtonsMobile`:
 
 {{"demo": "pages/components/tabs/ScrollableTabsButtonForce.js", "bg": true}}
 
@@ -74,7 +74,7 @@ waiAria: 'https://www.w3.org/TR/wai-aria-practices/#tabpanel'
 
 ### 防止滚动按钮
 
-永远不会显示左右滚动按钮。 所有的滚动比如通过用户代理的滚动机制来发起（例如，左右滑动，移动鼠标滑轮等等）。
+Left and right scroll buttons are never be presented with `scrollButtons={false}`. 所有的滚动比如通过用户代理的滚动机制来发起（例如，左右滑动，移动鼠标滑轮等等）。
 
 {{"demo": "pages/components/tabs/ScrollableTabsButtonPrevent.js", "bg": true}}
 
