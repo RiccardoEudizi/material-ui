@@ -13,7 +13,7 @@ Uma [grade](https://material.io/design/layout/responsive-layout-grid.html) cria 
 
 {{"component": "modules/components/ComponentLinkHeader.js"}}
 
-> ⚠️ The `Grid` component shouldn't be confused with a data grid; it is closer to a layout grid. For a data grid head to [the `DataGrid` component](/components/data-grid/).
+> O componente `Grid` não deve ser confundido com um data grid; ele está mais próximo de um layout grid. Para um cabeçalho do data grid para [o componente `DataGrid`](/components/data-grid/).
 
 ## Como funciona
 
