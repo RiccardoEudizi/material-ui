@@ -58,7 +58,7 @@ Botões de rolagem para a esquerda e para a direita serão automaticamente apres
 
 ### Botões de rolagem forçados
 
-Botões de rolagem para esquerda e direita serão apresentados independente da largura de exibição do dispositivo.
+Left and right scroll buttons be presented (reserve space) regardless of the viewport width with `scrollButtons={true}` `allowScrollButtonsMobile`:
 
 {{"demo": "pages/components/tabs/ScrollableTabsButtonForce.js", "bg": true}}
 
@@ -74,7 +74,7 @@ If you want to make sure the buttons are always visible, you should customize th
 
 ### Impedir botões de rolagem
 
-Botões de rolagem para a esquerda e para a direita nunca serão apresentados. Toda rolagem deve ser iniciada por meio de mecanismos de rolagem do agente do usuário (por exemplo, deslizar para a esquerda/direita, rolar scroll do mouse, etc.)
+Left and right scroll buttons are never be presented with `scrollButtons={false}`. Toda rolagem deve ser iniciada por meio de mecanismos de rolagem do agente do usuário (por exemplo, deslizar para a esquerda/direita, rolar scroll do mouse, etc.)
 
 {{"demo": "pages/components/tabs/ScrollableTabsButtonPrevent.js", "bg": true}}
 
