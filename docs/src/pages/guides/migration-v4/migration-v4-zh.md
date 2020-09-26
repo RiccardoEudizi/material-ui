@@ -113,15 +113,6 @@ The following changes are supported by the adapter.
   theme.spacing(2) => '16px'
   ```
 
-  你可以用以下方法恢复到以前的行为：
-
-  ```diff
-  -const theme = createMuiTheme();
-  +const theme = createMuiTheme({
-  +  spacing: x => x * 8,
-  +});
-  ```
-
 - `theme.palette.text.hint` 键在 Material-UI 组件中未使用，现已被删除。
 
 ```diff
@@ -528,6 +519,13 @@ const theme = createMuitheme({
 
 ### Rating
 
+- Move the component from the lab to the core. The component is now stable.
+
+  ```diff
+  -import Rating from '@material-ui/lab/Rating';
+  +import Rating from '@material-ui/core/Rating';
+  ```
+
 - 为提高无障碍的可访问性，我们更改了默认的空图标。 如果你有自定义了 `icon` 属性，但没有使用 `emptyIcon` 属性，你可以用以下方法还原到以前的行为：
 
   ```diff
@@ -662,6 +660,20 @@ const theme = createMuitheme({
   -<Tabs onChange={(event: React.ChangeEvent<{}>, value: unknown) => {}} />
   +<Tabs onChange={(event: React.SyntheticEvent, value: unknown) => {}} />
   ```
+
+- The API that controls the scroll buttons has been split it in two props.
+
+  - The `scrollButtons` prop controls when the scroll buttons are displayed depending on the space available.
+  - The `allowScrollButtonsMobile` prop removes the CSS media query that systematically hide the scroll buttons on mobile.
+
+```diff
+-<Tabs scrollButtons="on" />
+-<Tabs scrollButtons="desktop" />
+-<Tabs scrollButtons="off" />
++<Tabs scrollButtons allowScrollButtonsMobile />
++<Tabs scrollButtons />
++<Tabs scrollButtons={false} />
+```
 
 ### TextField
 
